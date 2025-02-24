@@ -8,7 +8,10 @@
     </head>
     <body>
     <?php
-        $bread = $_POST['bread'] ?? null;
+        //The code below this text calls the functions from the other page with the added bonus of having an error message!
+        //Switch and case gives the proproties of the options the user has chosen. Again, NEVER use 0 again, whole thing could have been avoided if I didn't want to be lazy and just but numbers.
+        //arsort: short for array sort and does what it sounds like, sorts arrays in descending order and maintain index association
+        //array_key_first: This special line of code gets the first key from an array, that being EternalYouth.
         $toast = $_POST['toast'] ?? null;
         $nutbut = $_POST['nutbut'] ?? null;
         $jam = $_POST['jam'] ?? null;
@@ -97,24 +100,24 @@
         }
         // Determine the highest-scoring category
         arsort($EternalYouth);
-        $internalage = array_key_first($EternalYouth);
+        $internal_age = array_key_first($EternalYouth);
         echo "<h2>Your internal age is ";
-        if ($internalage == "5-10 Years Old") {
+        if ($internal_age == "5-10 Years Old") {
             echo "5-10 Years Old</h2>";
             echo "<p>You are a child at heart who loves to have fun! You're all about doing fun things and making sure others feel included whenever possible!</p>";
-        } elseif ($internalage == "11-20 Years Old") {
+        } elseif ($internal_age == "11-20 Years Old") {
             echo "11-20 Years Old</h2>";
             echo "<p>You can be optimistic at times, but you have a unique personality! You still feel like you're figuring yourself out!</p>";
-        } elseif ($internalage == "21-30 Years Old") {
+        } elseif ($internal_age == "21-30 Years Old") {
             echo "21-30 Years Old</h2>";
             echo "<p>You're in your prime, making responsible but fun choices. You enjoy a good balance of classic and adventurous tastes.</p>";
-        } elseif ($internalage == "31-40 Years Old") {
+        } elseif ($internal_age == "31-40 Years Old") {
             echo "31-40 Years Old</h2>";
             echo "<p>You are responsible, but you also have a funny side! You like to hang out and socialize with friends often, but you're always in bed by 10 p.m.!</p>";
-        } elseif ($internalage == "41-50 Years Old") {
+        } elseif ($internal_age == "41-50 Years Old") {
             echo "41-50 Years Old</h2>";
             echo "<p>You're a refined adult at heart! You enjoy sophistication and a good twist on the classics.</p>";
-        } elseif ($internalage == "50+ Years Old") {
+        } elseif ($internal_age == "50+ Years Old") {
             echo "50+ Years Old</h2>";
             echo "<p>You are wise beyond your years, and you enjoy the little things in life! You've definitely been called an old soul before!</p>";
         } else {
@@ -123,6 +126,10 @@
     ?>
     <div class="topnav">
         <a class="btn btn-primary" href="Homework_4.php" role="button">Try Again?</a>
+    </div>
+    <div class="topnav">
+        Link to Homework 4 and Commenting Etiqutte in Github:
+        <a class="btn btn-primary" href="https://github.com/twright2023/Homework_4.git" role="button">GitHub</a>
     </div>
     </body>
 </html>
