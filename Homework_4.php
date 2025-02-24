@@ -27,10 +27,10 @@
                             print("<input type='radio' name='bread' value='sd'>Sourdough<br>");
                             print("<input type='radio' name='bread' value='ciabatta'>Ciabatta<br>");
                             print("<input type='radio' name='bread' value='wheat'>Wheat (Rye, they all look the same.)<br>");
-                            //Finally found a place to put this! So, 1 gives you radio buttons of your options. Each option is required, that's what the "required" part is about.
+                            //I finally found a place to put this! So, 1 gives you radio buttons for your options. Each option is required; that's what the "required" part is about.
                             //Each line of code is like this, with the name of the group being bread and each button having its value/name, being a correlation to its visible name.
                             //This is true for 1-8. The inputs are the buttons, by the way.
-                            //The one link at top and the two scripts at the bottom is for the style!
+                            //The one link at the top and the two scripts at the bottom are for the style!
                         ?>
                         </select>
                     </div>  
