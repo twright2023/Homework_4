@@ -8,10 +8,11 @@
     </head>
     <body>
     <?php
-        //The code below this text calls the functions from the other page with the added bonus of having an error message!
-        //Switch and case gives the proproties of the options the user has chosen. Again, NEVER use 0 again, whole thing could have been avoided if I didn't want to be lazy and just but numbers.
-        //arsort: short for array sort and does what it sounds like, sorts arrays in descending order and maintain index association
+        //The code below this text calls the functions from the other page with the bonus of having an error message!
+        //Switch and case give the user's options properties. Again, NEVER use 0, the whole thing could have been avoided if I didn't want to be lazy and just put numbers.
+        //arsort: short for array sort and does what it sounds like, sorts arrays in descending order and maintains index association
         //array_key_first: This special line of code gets the first key from an array, that being EternalYouth.
+        $bread = $_POST['bread'] ?? null;
         $toast = $_POST['toast'] ?? null;
         $nutbut = $_POST['nutbut'] ?? null;
         $jam = $_POST['jam'] ?? null;
