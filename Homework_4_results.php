@@ -8,7 +8,7 @@
     </head>
     <body>
     <?php
-        //The code below this text calls the functions from the other page with the bonus of having an error message!
+        //The code below this text calls the keys from the other page with the bonus of having an error message!
         //Switch and case give the user's options properties. Again, NEVER use 0, the whole thing could have been avoided if I didn't want to be lazy and just put numbers.
         //arsort: short for array sort and does what it sounds like, sorts arrays in descending order and maintains index association
         //array_key_first: This special line of code gets the first key from an array, that being EternalYouth.
